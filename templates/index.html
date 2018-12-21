@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Success{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+
+{% block content %}
+
+Hello from Krishan desktop through docker again. This time from vscode.
+<br>
+<a href='/' class = 'btn btn-default' >Go Home</button></a><br><br>
+<a href='/listblobs' class = 'btn btn-default' >Show files from blob</button></a>
+<a href='/upload' class = 'btn btn-default' >Upload File to blob</button></a><br><br>
+
+<a href='/algos' class = 'btn btn-default' >Show algorithms from DB</button></a>
+
+<a href='/addalgo' class = 'btn btn-default' >Add algorithm to DB </button></a><br><br>
+
+
+{% endblock %}

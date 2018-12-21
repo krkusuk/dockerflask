@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}Upload to blob{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+
+{% block content %}
+<strong>Blobs existing currently</strong>
+
+<table class="table table-striped">
+  <thead>
+      <tr>
+          <th>Name</th>
+          <th>Modified</th>
+      </tr>
+  </thead>
+  {% for blob in blobs %}
+  <tr>
+      <td>{{ blob.name }}</td>
+      <td>{{ blob.properties.last_modified}}</td>
+  </tr>
+  {% endfor %}
+</table>
+<a href='/upload' class = 'btn btn-default' >Upload</button>
+<a href='/' class = 'btn btn-default' >Go Home</button>
+{% endblock %}

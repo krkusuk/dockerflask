@@ -117,7 +117,7 @@ source:
 https://docs.microsoft.com/en-us/sql/connect/odbc/linux-mac/installing-the-microsoft-odbc-driver-for-sql-server?view=sql-server-2017
 
 
-SQL Allachemy config instruction:
+SQL Alachemy config instruction:
 
 
 https://stackoverflow.com/questions/4493614/sqlalchemy-equivalent-of-pyodbc-connect-string-using-freetds
@@ -136,9 +136,11 @@ Fixed from uwsgi.ini remove
 
     uid = 1000
 
+# Azure blob storage integration
 
+Tutorial: [Azure blob storage in python]
 
-## Appendix
+# Appendix
 [Sample tutorial using dockerhub]: https://www.jamessturtevant.com/posts/Deploying-Python-Website-To-Azure-Web-with-Docker/
 
 [Docker using visual studio code]: https://code.visualstudio.com/docs/python/tutorial-deploy-containers
@@ -150,8 +152,15 @@ Fixed from uwsgi.ini remove
 
 [Sqlserver flask source code]: https://github.com/krkusuk/flask-sqlserver/blob/master/baselinewebapp/application.py
 
+[Azure blob storage in python]: https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-python
 Useful command to generate requirements.txt
 	
     pip freeze > requirements.txt
 
 [Useful tutorial for custom docker images in azure]: https://docs.microsoft.com/en-us/azure/app-service/containers/tutorial-custom-docker-image
+
+Folder structure is imprtant in python. Or it results in unexpected behaviour
+
+Flask file structure demo
+https://scotch.io/tutorials/getting-started-with-flask-a-python-microframework
+
